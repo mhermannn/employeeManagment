@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Person Details</title>
+</head>
+<body>
+
+<div th:replace="fragments :: header"></div>
+
+<h1>Person Details</h1>
+<table>
+    <tr>
+        <th>ID</th>
+        <td th:text="${person.id}">ID</td>
+    </tr>
+    <tr>
+        <th>First Name</th>
+        <td th:text="${person.firstName}">First Name</td>
+    </tr>
+    <tr>
+        <th>Last Name</th>
+        <td th:text="${person.lastName}">Last Name</td>
+    </tr>
+    <tr>
+        <th>Email</th>
+        <td th:text="${person.email}">Email</td>
+    </tr>
+    <tr>
+        <th>Company</th>
+        <td th:text="${person.company}">Company</td>
+    </tr>
+    <tr>
+        <th>Salary</th>
+        <td th:text="${person.salary}">Salary</td>
+    </tr>
+    <tr>
+        <th>Currency</th>
+        <td th:text="${person.currency}">Currency</td>
+    </tr>
+    <tr>
+        <th>Country</th>
+        <td th:text="${person.country}">Country</td>
+    </tr>
+</table>
+<a th:href="@{/employees}" class="btn">Back to List</a>
+
+<div th:replace="fragments :: footer"></div>
+
+</body>
+</html>

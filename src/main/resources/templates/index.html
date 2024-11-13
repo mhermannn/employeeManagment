@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Employee Management</title>
+</head>
+<body>
+
+<div th:replace="fragments :: header"></div>
+
+<h2>Salary Summary by Currency</h2>
+<table>
+    <tr>
+        <th>Currency</th>
+        <th>Total Salary</th>
+    </tr>
+    <tr th:each="entry : ${salarySummaryByCurrency}">
+        <td th:text="${entry.key}">Currency</td>
+        <td th:text="${entry.value}">Total Salary</td>
+    </tr>
+</table>
+
+<!--<ul>-->
+<!--    <li><a th:href="@{/employees}">Employee List</a></li>-->
+<!--</ul>-->
+
+<div th:replace="fragments :: footer"></div>
+
+</body>
+</html>

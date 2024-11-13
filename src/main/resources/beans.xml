@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="president" class="com.techcorp.employeemanagment.domain.Person">
+        <constructor-arg value="Chrystal"/>
+        <constructor-arg value="Havoc"/>
+        <constructor-arg value="chavocr@yahoo.com"/>
+        <constructor-arg value="Mymm"/>
+        <constructor-arg value="80000"/>
+        <constructor-arg value="USD"/>
+        <constructor-arg value="USA"/>
+    </bean>
+
+    <bean id="vicePresident" class="com.techcorp.employeemanagment.domain.Person">
+        <constructor-arg value="Halley"/>
+        <constructor-arg value="Gadaud"/>
+        <constructor-arg value="hgadaud9@sohu.com"/>
+        <constructor-arg value="Oyope"/>
+        <constructor-arg value="75000"/>
+        <constructor-arg value="EUR"/>
+        <constructor-arg value="France"/>
+    </bean>
+
+    <bean id="secretary" class="com.techcorp.employeemanagment.domain.Person">
+        <constructor-arg value="Kirbie"/>
+        <constructor-arg value="Wrettum"/>
+        <constructor-arg value="kwrettumj@slideshare.net"/>
+        <constructor-arg value="Browsetype"/>
+        <constructor-arg value="50000"/>
+        <constructor-arg value="GBP"/>
+        <constructor-arg value="UK"/>
+    </bean>
+
+</beans>
